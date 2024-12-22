@@ -19,7 +19,9 @@ const authAdmin = (req, res, next) => {
     console.log("Token decoded:", decoded);
 
     // Check if the decoded email matches the admin's email
-    if (decoded.email !== process.env.ADMIN_EMAIL) {
+    if (decoded.email !== process.env.ADMIN_EMAIL)
+      // Aalok
+     {
       console.log("Unauthorized email:", decoded.email);
       return res.status(403).json({ success: false, message: "Access Denied. Not Authorized." });
     }

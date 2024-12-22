@@ -69,6 +69,7 @@ const appointmentsDoctor = async (req, res) => {
     const { docId } = req.body;
     const appointments = await appointmentModel.find({ docId });
     res.json({ success: true, appointments });
+    // Aalok
   } catch (error) {
     console.error(error);
     res.json({ success: false, message: error.message });
@@ -104,6 +105,7 @@ const appointmentCancel = async (req, res) => {
     if (appointmentData && appointmentData.docId === docId) {
       await appointmentModel.findByIdAndUpdate(appointmentId, {
         cancelled: true,
+        // Aalok
       });
       return res.json({ success: true, message: "Appointment Cancelled" });
     } else {

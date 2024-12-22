@@ -24,6 +24,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2 text-xs">
         <img
           className="w-36 sm:w-40 cursor-pointer"
+          // Aalok
           src={assets.admin_logo}
           alt="Admin Logo"
         />

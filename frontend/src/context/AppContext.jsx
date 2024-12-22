@@ -27,6 +27,7 @@ const AppContextProvider = (props) => {
       
       if (data.success) {
         setDoctors(data.doctors);
+        // Aalok
       } else {
         setError(data.message || "Failed to fetch doctors.");
         toast.error(data.message || "Failed to fetch doctors.");

@@ -25,6 +25,7 @@ const App = () => {
       <div className='flex items-start'>
         <Sidebar/>
         <Routes>
+        // Aalok
           {/* Admin Routes */}
           <Route path='/' element={<></>}/>
           <Route path='/admin-dashboard' element={<Dashboard/>}/>
